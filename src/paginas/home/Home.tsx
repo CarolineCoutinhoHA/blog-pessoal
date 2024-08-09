@@ -1,7 +1,8 @@
 import { useContext } from 'react';
 import { UserContext } from '../../contexts/UserContext';
 import { Link } from 'react-router-dom';
-import './Home.css'; 
+import './Home.css';
+
 
 function Home() {
   const { nome } = useContext(UserContext);
@@ -10,7 +11,7 @@ function Home() {
     <div className='home-container'>
       <div className='home-content'>
         <h2 className='home-title'>Home</h2>
-        <h2 className='home-user'>Olá usuário: UserGeneration</h2>
+        <h2 className='home-user'>Olá usuário: {nome}</h2>
         <Link to="/login" className='home-button'>
           Voltar
         </Link>
