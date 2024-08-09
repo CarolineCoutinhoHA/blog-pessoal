@@ -1,3 +1,37 @@
+
+import UserProvider from './contexts/UserContext';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './paginas/home/Home';
+import Login from './paginas/login/login';
+
+
+function App() {
+
+  return (
+    <UserProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+
+      </BrowserRouter>
+
+    </UserProvider>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
 /*import './App.css';
 
 function App() {
@@ -86,6 +120,7 @@ function App() {
 export default App;
 */
 
+/*
 import './App.css';
 import Home from './paginas/home/Home';
 import Navbar from './components/navBar/NavBar';
@@ -111,3 +146,48 @@ function App() {
 );
 }
 export default App;
+*/
+
+/*
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import './App.css';
+
+interface User {
+  id: number;
+  name: string;
+}
+
+function App() {
+  const [users, setUsers] = useState<User[]>([]);
+
+  useEffect(() => {
+    axios.get<User[]>('https://jsonplaceholder.typicode.com/users')
+      .then(response => {
+        setUsers(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
+
+  return (
+    <div className="container">
+      <div className="content-box">
+        <h1 className="title">Lista de usuários</h1>
+        <div className="user-list-container">
+          <ul className="user-list">
+            {users.map(user => (
+              <li key={user.id}>{user.name}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+*/

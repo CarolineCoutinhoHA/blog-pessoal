@@ -1,3 +1,29 @@
+import { useContext } from 'react';
+import { UserContext } from '../../contexts/UserContext';
+import { Link } from 'react-router-dom';
+import './Home.css'; 
+
+function Home() {
+  const { nome } = useContext(UserContext);
+
+  return (
+    <div className='home-container'>
+      <div className='home-content'>
+        <h2 className='home-title'>Home</h2>
+        <h2 className='home-user'>Olá usuário: UserGeneration</h2>
+        <Link to="/login" className='home-button'>
+          Voltar
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export default Home;
+
+
+
+
 /*import './Home.css';
 
 interface minhaProps {
@@ -247,6 +273,8 @@ const Home = () => {
 
 export default Home;
 */
+
+/*
 import homeLogo from '../../assets/img/ENCHANTIX-gruppo.png';
 import './Home.css';
 
@@ -274,4 +302,9 @@ function Home() {
 }
 
 export default Home;
+
+*/
+
+
+
 

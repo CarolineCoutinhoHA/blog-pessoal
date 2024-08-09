@@ -1,3 +1,49 @@
+import React, { useContext } from 'react';
+import { UserContext } from '../../contexts/UserContext';
+import { useNavigate } from 'react-router-dom';
+import './Login.css';
+
+function Login() {
+  const { nome, setNome } = useContext(UserContext);
+  let navigate = useNavigate();
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    navigate('/home');
+  }
+
+  return (
+    <div className='login-container'>
+      <form onSubmit={handleSubmit} className='login-form'>
+        <div className='title-container'>
+          <h2 className='login-title'>Logar</h2>
+        </div>
+        <div className='login-input-container'>
+          <label htmlFor='usuario'>Nome</label>
+          <input
+            type='text'
+            id='usuario'
+            name='usuario'
+            placeholder='Usuário'
+            className='login-input'
+            value={nome}
+            onChange={(event) => setNome(event.target.value)}
+          />
+        </div>
+        <button type='submit' className='login-button'>
+          Entrar
+        </button>
+      </form>
+    </div>
+  );
+}
+
+export default Login;
+
+
+
+
+
 /*
 import { useNavigate, Link } from 'react-router-dom';
 
@@ -30,7 +76,7 @@ export default Login;
 */
 
 
-
+/*
 import loginImage from '../../assets/img/Aestetic Winx Club Эстетика Винкс Клуб.jpeg';
 
 function Login() {
@@ -43,7 +89,6 @@ function Login() {
                 <p className="text-base text-pink-900">
                     Por favor, faça seu login
                 </p>
-                {/* Espaço para a imagem */}
                 <div className="mb-8 h-48 bg-gray-200 flex justify-center items-center">
                     <img 
                         src={loginImage} 
@@ -57,6 +102,7 @@ function Login() {
 }
 
 export default Login;
+*/
 
 
 
