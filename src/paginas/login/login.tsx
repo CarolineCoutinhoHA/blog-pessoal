@@ -28,3 +28,36 @@ const Login = () => {
 
 export default Login;
 */
+
+
+
+import loginImage from '../../assets/img/Aestetic Winx Club Эстетика Винкс Клуб.jpeg';
+
+function Login() {
+    return (
+        <div className="bg-pink-50 min-h-screen flex justify-center items-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center w-full max-w-md">
+                <h1 className="text-4xl font-bold mb-4 text-pink-700">
+                    Login
+                </h1>
+                <p className="text-base text-pink-900">
+                    Por favor, faça seu login
+                </p>
+                {/* Espaço para a imagem */}
+                <div className="mb-8 h-48 bg-gray-200 flex justify-center items-center">
+                    <img 
+                        src={loginImage} 
+                        alt="Login" 
+                        className="max-w-full max-h-full object-contain" 
+                    />
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Login;
+
+
+
+
