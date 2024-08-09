@@ -34,8 +34,8 @@ function App() {
 
 export default App;
 */
-/*
-import React from 'react';
+
+
 import './App.css';
 import Home from './paginas/home/Home';
 
@@ -47,9 +47,9 @@ function App() {
 );
 }
 export default App;
-*/
 
-import './App.css';
+
+/*import './App.css';
 import Home from './paginas/home/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './paginas/login/login';
@@ -67,3 +67,4 @@ function App() {
   );
 }
 export default App;
+*/

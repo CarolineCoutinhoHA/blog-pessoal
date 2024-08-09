@@ -119,7 +119,7 @@ function Home() {
 export default Home;
 */
 
-/*import './Home.css';
+import './Home.css';
 
 
 
@@ -216,9 +216,9 @@ function Home() {
 }
 
 export default Home;
-*/
 
-import { useNavigate, Link } from 'react-router-dom';
+
+/*import { useNavigate, Link } from 'react-router-dom';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -247,3 +247,4 @@ const Home = () => {
 
 export default Home;
 
+*/
