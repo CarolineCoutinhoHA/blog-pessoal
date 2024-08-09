@@ -1,17 +1,17 @@
-
-import Home from './paginas/home/Home';
-import './App.css';
+/*import './App.css';
 
 function App() {
   return (
-    <Home
-      title="Componente Home"
-      description="Este é um componente Home que recebe props."
-    />
+    <>
+      <h1 className="text-3xl font-bold text-red-500 underline text-center">
+        Hello world!
+      </h1>
+    </>
   );
 }
 
 export default App;
+*/
 
 /*import './App.css';
 import { useState } from 'react';
@@ -34,6 +34,36 @@ function App() {
 
 export default App;
 */
+/*
+import React from 'react';
+import './App.css';
+import Home from './paginas/home/Home';
 
+function App() {
+  return (
+    <>
+    <Home/>
+    </>
+);
+}
+export default App;
+*/
 
-
+import './App.css';
+import Home from './paginas/home/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './paginas/login/login';
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+}
+export default App;
