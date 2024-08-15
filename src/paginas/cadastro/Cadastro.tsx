@@ -9,6 +9,7 @@ function Cadastro() {
   let navigate = useNavigate();
 
   const [confirmaSenha, setConfirmaSenha] = useState<string>("");
+  const [mensagemErro, setMensagemErro] = useState<string>("");
 
   const [usuario, setUsuario] = useState<Usuario>({
     id: 0,
@@ -55,10 +56,10 @@ function Cadastro() {
         await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuarioResposta);
         alert('Usuário cadastrado com sucesso');
       } catch (error) {
-        alert('Erro ao cadastrar o Usuário');
+        setMensagemErro('Erro ao cadastrar o Usuário');
       }
     } else {
-      alert('Dados inconsistentes. Verifique as informações de cadastro.');
+      setMensagemErro('Dados inconsistentes. Verifique as informações de cadastro.');
       setUsuario({ ...usuario, senha: "" }); // Reinicia o campo de Senha
       setConfirmaSenha("");                  // Reinicia o campo de Confirmar Senha
     }
@@ -71,6 +72,7 @@ function Cadastro() {
         <div className="cadastro-header">
           Cadastrar
         </div>
+        {mensagemErro && <div className="mensagem-erro">{mensagemErro}</div>}
         <form className='flex flex-col w-full gap-4' onSubmit={cadastrarNovoUsuario}>
           <div className="flex flex-col w-full">
             <label htmlFor="nome">Nome</label>
@@ -147,5 +149,4 @@ function Cadastro() {
 }
 
 export default Cadastro;
-
 
