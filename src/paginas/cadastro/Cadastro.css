@@ -1,0 +1,74 @@
+.fundoCadastro {
+    background-image: url(../../assets/img/ENCHANTIX-gruppo.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.cadastro-container {
+    background-color: #ffffff; /* Fundo branco para o container */
+    border: 3px solid #d43f6c; /* Borda pink-700 ao redor do container */
+    border-radius: 12px; /* Arredondamento ajustado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem; /* Espaçamento reduzido */
+    width: 100%;
+    max-width: 400px; /* Largura máxima ajustada */
+    margin: 1rem;
+}
+
+.cadastro-header {
+    background-color: #e6007d; /* Fundo pink-800 */
+    color: white; /* Texto branco */
+    border-radius: 22px; /* Arredondamento ajustado */
+    padding: 0.5rem; /* Padding reduzido */
+    text-align: center;
+    font-weight: 600; /* Aumenta a espessura da fonte */
+    font-size: 1.7rem; /* Aumenta o tamanho da fonte */
+    margin-bottom: 0.1rem;
+}
+
+.input-field {
+    border: 2px solid #d43f6c; /* Bordas pink-700 */
+    border-radius: 10px; /* Arredondamento ajustado */
+    padding: 0.5rem; /* Padding reduzido */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    background-color: #ffffff; /* Fundo branco por padrão */
+}
+
+.input-field:focus {
+    border-color: #d43f6c; /* Bordas pink-700 ao focar */
+    background-color: #e0f9f4; /* Fundo esmeralda bem claro ao focar */
+    outline: none;
+}
+
+.button-cancelar {
+    background-color: #d26d6d; /* Tom de vermelho misturado com rosa escuro */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem; /* Padding reduzido */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-cancelar:hover {
+    background-color: #d32f2f; /* Vermelho completamente quando passar o mouse */
+    color: white;
+}
+
+.button-cadastrar {
+    background-color: #a4c639; /* Tom de esmeralda */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem; /* Padding reduzido */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-cadastrar:hover {
+    background-color: #00aaff; /* Azul sky quando passar o mouse */
+    color: white;
+}

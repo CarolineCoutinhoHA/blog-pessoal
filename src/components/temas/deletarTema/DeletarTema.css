@@ -1,0 +1,84 @@
+.deletar-container {
+    width: 100%;
+    max-width: 400px; /* Diminuir a largura máxima */
+    margin: 5rem auto; /* Espaço reduzido acima e centralização horizontal */
+    padding: 1.5rem; /* Reduzir o padding interno */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  .deletar-header {
+    background-color: #f18c39;
+    color: white;
+    font-size: 1.25rem; /* Reduzir o tamanho da fonte */
+    font-weight: bold;
+    text-align: center;
+    padding: 0.75rem; /* Reduzir o padding */
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .deletar-content {
+    padding: 1.5rem; /* Reduzir o padding */
+    text-align: center;
+    font-size: 1rem; /* Reduzir o tamanho da fonte */
+    color: #333;
+  }
+  
+  .deletar-content p {
+    margin-bottom: 1rem; /* Reduzir o espaço entre os parágrafos */
+  }
+  
+  .tema-info {
+    margin-top: 1rem;
+    border-bottom: 2px solid #ffbfa1; /* Linha mais fina */
+    padding-bottom: 0.5rem;
+  }
+  
+  .tema-label {
+    font-size: 1.1rem; /* Reduzir o tamanho da fonte */
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .tema-descricao {
+    font-size: 1.1rem; /* Reduzir o tamanho da fonte */
+    color: #333;
+    margin-top: 0.5rem; /* Espaço acima da descrição */
+  }
+  
+  .deletar-buttons {
+    display: flex;
+    margin-top: 1rem; /* Reduzir o espaço acima dos botões */
+  }
+  
+  .deletar-button {
+    flex: 1;
+    padding: 0.75rem; /* Reduzir o padding */
+    font-size: 1rem; /* Reduzir o tamanho da fonte */
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .deletar-button-nao {
+    background-color: #EF4444;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .deletar-button-nao:hover {
+    background-color: #B91C1C;
+  }
+  
+  .deletar-button-sim {
+    background-color: #0284C7;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .deletar-button-sim:hover {
+    background-color: #03A9F4;
+  }
+  

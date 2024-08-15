@@ -1,0 +1,68 @@
+/* Navbar.css */
+.navbar {
+    width: 100%;
+    background-color: #f83489; /* Tom de rosa escuro, pink-800 */
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px 30px; /* Aumentar um pouco o padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .logo {
+    font-size: 2.5rem; /* Tamanho da fonte do logo */
+    font-weight: 700; /* Letras mais grossas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra no texto */
+  }
+  
+  .search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-container input {
+    padding: 6px 12px; /* Aumentar um pouco o padding do campo de pesquisa */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid transparent;
+  }
+  
+  .search-container input:focus {
+    border: 2px solid #941d58; /* Rosa escuro */
+    background-color: #fef2f2; /* Rosa muito claro, quase branco */
+    color: black; /* Manter o texto preto quando em foco */
+  }
+  
+  .links {
+    display: flex;
+    gap: 0.1px; /* Espaçamento entre os links */
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem; /* Tamanho da fonte dos links */
+    font-weight: 600; /* Letras mais grossas */
+    padding: 4px 8px; /* Aumentar um pouco o padding dos links */
+    border-radius: 5px; /* Arredondar as bordas do fundo do link */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+  }
+  
+  .nav-link:hover {
+    background-color: #eea9cb; /* Rosa claro */
+    color: #d21f6d; /* Rosa escuro, pink-900 */
+  }
+  
+  
