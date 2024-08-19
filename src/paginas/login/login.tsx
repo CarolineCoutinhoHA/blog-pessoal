@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../../contexts/UserContext';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import './login.css';
 
 function Login() {
   const { nome, setNome } = useContext(UserContext);
