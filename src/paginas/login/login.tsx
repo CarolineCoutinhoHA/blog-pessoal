@@ -1,5 +1,5 @@
 import { ChangeEvent, useContext, useEffect, useState } from 'react';
-import './login.css';
+import './Login.css';
 
 import { Link, useNavigate } from 'react-router-dom';
 
