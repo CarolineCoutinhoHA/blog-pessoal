@@ -4,18 +4,16 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "node",  // Alterado para 'node', que é comum e compatível com bundlers
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    //"strict": true,
-    "esModuleInterop": true,  // Adicionado para compatibilidade com módulos ES
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    //"noUnusedLocals": true,
-    //"noUnusedParameters": true,
-    //"noFallthroughCasesInSwitch": true
+    "noUnusedLocals": false,  // Definido como false para evitar erro de importação não utilizada
+    "noUnusedParameters": false // Definido como false para evitar erro de parâmetro não utilizado
   },
   "include": ["src"]
 }
